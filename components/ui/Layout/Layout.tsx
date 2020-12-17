@@ -1,14 +1,14 @@
 import { ReactNode } from "react";
 import Head from "next/head";
-import Header from "./Header";
-import Footer from "./Footer";
+import { Header } from "@components/ui";
+import { Footer } from "@components/ui";
 
-type Props = {
+type LayoutProps = {
   children?: ReactNode;
   title?: string;
 };
 
-const Layout = ({ children, title = "" }: Props) => {
+const Layout = ({ children, title = "" }: LayoutProps) => {
   return (
     <div className="layout">
       <Head>
