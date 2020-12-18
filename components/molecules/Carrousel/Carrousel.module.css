@@ -1,0 +1,94 @@
+.root {
+  display: flex;
+  align-items: center;
+  background: #000;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+.root img {
+  position: absolute;
+  opacity: 0.55;
+  height: 100%;
+  width: auto;
+}
+
+.carrouselCaption {
+  z-index: 1;
+  position: relative;
+  padding: 1rem;
+  color: #fff;
+}
+
+.carrouselCaption h1 {
+  font-size: 5vh;
+  font-weight: 900;
+  line-height: 31px;
+}
+
+.carrouselCaption h2 {
+  font-size: 3vh;
+  width: 30vh;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 1rem;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dots span {
+  width: 0.7vh;
+  height: 0.7vh;
+  border-radius: 100%;
+  background: #fff;
+  opacity: 0.6;
+}
+
+.dots .dotActive {
+  background: #f8475f;
+  opacity: 1;
+}
+
+.dots span + span {
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .root {
+    height: 430px;
+  }
+  .root:after {
+    background: url("../../../public/banner.svg") no-repeat top right;
+    content: "";
+    width: 95vh;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .root img {
+    width: 60vw;
+    right: 0;
+    opacity: 0.9;
+  }
+  .carrouselCaption {
+    width: 60vw;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .carrouselCaption h2 {
+    font-size: 3vh;
+  }
+  .carrouselCaption h1 {
+    width: 20vw;
+    font-size: 4vh;
+    line-height: 1;
+    padding-top: 1vh;
+  }
+}
