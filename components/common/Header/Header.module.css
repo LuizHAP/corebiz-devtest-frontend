@@ -1,0 +1,71 @@
+.pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header nav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav div {
+  display: none;
+}
+
+.header nav div span {
+  font-size: 1.8vh;
+  color: #7a7a7a;
+  padding: 0.2vh 0 0 1vh;
+  font-family: Nunito;
+}
+
+.header nav ul li {
+  list-style: none;
+}
+
+.logo {
+  padding: 1.5vh;
+  width: 35%;
+}
+
+.searchDesktop {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .header nav div {
+    display: flex;
+    min-width: 10vw;
+  }
+
+  .hamburgerMenu {
+    display: none;
+  }
+
+  .logo {
+    padding: 1.5vh;
+    width: 10%;
+  }
+
+  .searchMobile {
+    display: none;
+  }
+
+  .searchDesktop {
+    display: flex;
+  }
+}
