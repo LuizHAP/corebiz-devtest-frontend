@@ -1,5 +1,5 @@
-import { Layout } from "@components/ui";
-import { MainSection } from "@components/common";
+import { Layout } from "@components/templates";
+import { MainSection } from "@components/organisms";
 
 const Index = () => (
   <Layout title="Home | Corebiz Ecommerce">

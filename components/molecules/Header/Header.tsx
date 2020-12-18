@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Logo } from "@components/common";
-import { Input } from "@components/common/";
+import { Logo } from "@components/atoms";
+import { Input } from "@components/atoms";
 
 import {
   AiOutlineMenu,

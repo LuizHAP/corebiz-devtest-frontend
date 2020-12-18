@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import Head from "next/head";
-import { Header } from "@components/common";
-import { Footer } from "@components/common";
+import { Header } from "@components/molecules";
+import { Footer } from "@components/molecules";
 
 type LayoutProps = {
   children?: ReactNode;
