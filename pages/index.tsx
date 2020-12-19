@@ -1,9 +1,10 @@
 import { Layout } from "@components/templates";
-import { MainSection } from "@components/organisms";
+import { HeroSection, ProductsSection } from "@components/organisms";
 
 const Index = () => (
   <Layout title="Home | Corebiz Ecommerce">
-    <MainSection />
+    <HeroSection />
+    <ProductsSection />
   </Layout>
 );
 

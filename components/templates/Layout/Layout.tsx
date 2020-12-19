@@ -1,16 +1,16 @@
-import { ReactNode } from "react";
 import Head from "next/head";
 import { Header } from "@components/molecules";
 import { Footer } from "@components/molecules";
 
-type LayoutProps = {
-  children?: ReactNode;
+import styles from "./Layout.module.css";
+interface LayoutProps {
+  children?: React.ReactNode;
   title?: string;
-};
+}
 
 const Layout = ({ children, title = "" }: LayoutProps) => {
   return (
-    <div className="layout">
+    <div className={styles.layout}>
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />

@@ -1,0 +1,27 @@
+.container {
+  margin: 0 auto;
+  width: 100vw;
+}
+
+.container h2 {
+  font-size: 3.5vh;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-align: start;
+  font-weight: 900;
+  margin: 3vh 0 0 3vh;
+}
+.container div {
+  width: 50px;
+  height: 3px;
+  content: "";
+  margin-left: 3.2vh;
+  background: #c0c0c0;
+  left: 0;
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 60vw;
+  }
+}
