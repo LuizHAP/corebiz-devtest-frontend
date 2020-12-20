@@ -1,13 +1,32 @@
 import styles from "./ProductsSection.module.css";
-import { ProductsCarrousel } from "@components/organisms";
+import { ProductsSlider } from "@components/molecules";
+import { ProductItem } from "@components/molecules";
+import Product from "../../../types/product";
 
-const ProductsSection = () => {
+type Props = {
+  products: Product[];
+};
+
+const ProductsSection = ({ products }: Props) => {
   return (
     <div className={styles.root}>
       <div className={styles.container}>
-        <h2>Mais vendidos</h2>
-        <div />
-        <ProductsCarrousel />
+        <h1>Mais vendidos</h1>
+        <div className={styles.line} />
+        <ProductsSlider>
+          {products.map((product, index) => (
+            <ProductItem
+              productId={product.productId}
+              productName={product.productName}
+              stars={product.stars}
+              imageUrl={product.imageUrl}
+              listPrice={product.listPrice}
+              price={product.price}
+              installments={product.installments}
+              key={index}
+            />
+          ))}
+        </ProductsSlider>
       </div>
     </div>
   );

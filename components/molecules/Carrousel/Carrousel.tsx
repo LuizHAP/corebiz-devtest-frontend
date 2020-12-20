@@ -3,7 +3,7 @@ import styles from "./Carrousel.module.css";
 const Carrousel = () => {
   return (
     <div className={styles.root}>
-      <img src="imageBanner.png" />
+      <img src="/assets/imageBanner.png" />
       <div className={styles.carrouselCaption}>
         <h2>Olá, o que você está buscando?</h2>
         <h1>Criar ou migrar seu e-commerce?</h1>
