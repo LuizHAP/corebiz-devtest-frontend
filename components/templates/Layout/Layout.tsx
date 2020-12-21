@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { Header } from "@components/molecules";
-import { Footer } from "@components/molecules";
+import { Header } from "@/components/molecules";
+import { Footer } from "@/components/molecules";
 
 import styles from "./Layout.module.css";
 interface LayoutProps {

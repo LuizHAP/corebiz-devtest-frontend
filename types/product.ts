@@ -1,4 +1,4 @@
-interface ProductItem extends React.HTMLAttributes<T> {
+interface ProductItem {
     productId: number;
     productName: string;
     stars: number;

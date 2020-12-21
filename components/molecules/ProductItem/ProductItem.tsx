@@ -1,7 +1,7 @@
 import styles from "./ProductItem.module.css";
-import parseMoney from "../../../utils/parseMoney";
+import parseMoney from "@/utils/parseMoney";
 
-import { Stars } from "@components/molecules";
+import { Stars } from "@/components/molecules";
 
 type Props = {
   productId: number;

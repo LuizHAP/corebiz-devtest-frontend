@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Logo } from "@components/atoms";
-import { SearchInput } from "@components/atoms";
+import { Logo } from "@/components/atoms";
+import { SearchInput } from "@/components/atoms";
 
 import {
   AiOutlineMenu,

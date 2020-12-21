@@ -1,8 +1,8 @@
-import { Layout } from "@components/templates";
-import { HeroSection, ProductsSection } from "@components/organisms";
-import api from "../services/api";
-import Product from "../types/product";
-import NewsLetterSection from "@components/organisms/NewsLetterSection";
+import { Layout } from "@/components/templates";
+import { HeroSection, ProductsSection } from "@/components/organisms";
+import api from "@/services/api";
+import Product from "@/types/product";
+import NewsLetterSection from "@/components/organisms/NewsLetterSection";
 
 type Props = {
   products: Product[];

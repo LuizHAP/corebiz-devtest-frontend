@@ -1,7 +1,7 @@
 import styles from "./ProductsSection.module.css";
-import { ProductsSlider } from "@components/molecules";
-import { ProductItem } from "@components/molecules";
-import Product from "../../../types/product";
+import { ProductsSlider } from "@/components/molecules";
+import { ProductItem } from "@/components/molecules";
+import Product from "@/types/product";
 
 type Props = {
   products: Product[];

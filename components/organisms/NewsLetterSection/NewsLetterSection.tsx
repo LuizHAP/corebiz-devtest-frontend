@@ -1,4 +1,4 @@
-import Input from "@components/atoms/Input/Input";
+import Input from "@/components/atoms/Input/Input";
 import { useState } from "react";
 import styles from "./NewsLetterSection.module.css";
 
