@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Logo } from "@components/atoms";
-import { Input } from "@components/atoms";
+import { SearchInput } from "@components/atoms";
 
 import {
   AiOutlineMenu,
@@ -22,12 +22,11 @@ const Header: React.FC = () => {
           <Logo className={styles.logo} />
         </Link>
         <form className={styles.searchDesktop}>
-          <Input
+          <SearchInput
             name="search"
             label="search"
             value={search}
             placeholder="O que está procurando?"
-            search
             onChange={(e) => {
               setSearch(e.target.value);
             }}
@@ -42,12 +41,11 @@ const Header: React.FC = () => {
         </nav>
       </div>
       <form className={styles.searchMobile}>
-        <Input
+        <SearchInput
           name="search"
           label="search"
           value={search}
           placeholder="O que está procurando?"
-          search
           onChange={(e) => {
             setSearch(e.target.value);
           }}

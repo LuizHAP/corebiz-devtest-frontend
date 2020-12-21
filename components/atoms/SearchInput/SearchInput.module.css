@@ -1,0 +1,31 @@
+.inputBlock {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1vh 0 2vh 0;
+}
+
+.inputBlock input {
+  width: 70vw;
+  height: 2rem;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: 0;
+  padding: 0 1.6rem 0 0;
+  font: 1rem Nunito;
+}
+
+.inputBlock input::placeholder {
+  color: #7a7a7a;
+}
+
+@media (min-width: 600px) {
+  .inputBlock {
+    margin: 0;
+  }
+
+  .inputBlock input {
+    width: 35vw;
+  }
+}
