@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  height: 43vh;
 }
 
 .root .offMark {
@@ -73,6 +72,7 @@
 @media (min-width: 600px) {
   .root{
     width: 60%;
+    height: 43vh;
   }
 
   .root .offMark {
