@@ -1,30 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# :pushpin: Table of Contents
 
-## Getting Started
+- [Technologies](#computer-technologies)
+- [Features](#rocket-features)
+- [How to Run](#construction_worker-how-to-run)
+- [Found a bug? Missing a specific feature?](#bug-issues)
+- [Contributing](#tada-contributing)
+- [License](#closed_book-license)
 
-First, run the development server:
+# :computer: Technologies
+
+This project was made using the follow technologies:
+
+<ul>
+  <li><a href="https://nodejs.org/en/docs/">NodeJs</a></li>
+  <li><a href="https://nextjs.org/">NextJs</a></li>
+  <li><a href="https://pt-br.reactjs.org/">React</a></li>
+  <li><a href="https://github.com/fkhadra/react-toastify">React Toastify</a></li>
+  <li><a href="https://bradfrost.com/blog/post/atomic-web-design/">Atomic Design</a></li>
+</ul>
+
+# :rocket: Features
+
+- Ecommerce Landing Page
+- Subscribe on Newsletter
+
+# :construction_worker: How to run
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Clone Repository
+$ git clone https://github.com/LuizHAP/corebiz-devtest-frontend
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 💻 Run NextJs Project
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+# Install Dependencies
+$ yarn install or npm install
 
-## Learn More
+# Run Aplication
+$ yarn dev or npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Go to http://localhost:3000/ to see the result.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# :bug: Issues
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Feel free to **file a new issue** with a respective title and description on the the [Corebiz Dev Frontend](https://github.com/LuizHAP/corebiz-devtest-frontend) repository. If you already found a solution to your problem, **i would love to review your pull request**!
 
-## Deploy on Vercel
+# :tada: Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Check out the [contributing](https://github.com/LuizHAP/corebiz-devtest-frontend/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# :closed_book: License
+
+Released in 2020 :closed_book: License
+
+Made with love by [Luiz Pansarini](https://github.com/LuizHAP/) 🚀.
+This project is under the [MIT license](https://github.com/LuizHAP/corebiz-devtest-frontend/master/LICENSE).
+
+Give a ⭐️ if this project helped you!
