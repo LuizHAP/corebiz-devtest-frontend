@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import Input from "@/components/atoms/Input/Input";
-import { FormHandles } from "@unform/core";
+import { FormHandles, SubmitHandler } from "@unform/core";
 import api from "@/services/api";
 import { Form } from "@unform/web";
 import styles from "./NewsLetterSection.module.css";
@@ -14,9 +14,12 @@ interface FormData {
 
 const NewsLetterSection: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
-  async function handleSubmit(data: FormData, { reset }) {
+  const handleSubmit: SubmitHandler<FormData> = async (
+    data: FormData,
+    { reset }
+  ) => {
     try {
-      formRef.current.setErrors({});
+      formRef.current?.setErrors({});
 
       const schema = Yup.object().shape({
         name: Yup.string().required("O nome é obrigatório"),
@@ -43,13 +46,13 @@ const NewsLetterSection: React.FC = () => {
       const validationErrors = {};
       if (err instanceof Yup.ValidationError) {
         err.inner.forEach((error) => {
-          validationErrors[error.path] = error.message;
+          validationErrors[error?.path] = error.message;
         });
 
         formRef.current?.setErrors(validationErrors);
       }
     }
-  }
+  };
   return (
     <div className={styles.root}>
       <div className={styles.container}>
