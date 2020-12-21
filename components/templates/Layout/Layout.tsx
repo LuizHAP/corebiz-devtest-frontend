@@ -18,7 +18,7 @@ const Layout = ({ children, title = "" }: LayoutProps) => {
       </Head>
       <Header />
       <main>{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
