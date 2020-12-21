@@ -11,7 +11,16 @@
   font-weight: 700;
 }
 
+.error{
+  color: red;
+  text-align: center;
+}
+
 @media (min-width: 600px) {
+  .inputBlock{
+    display: flex;
+    flex-direction: column;
+  }
   .inputBlock input {
     width: 20vw;
   }
