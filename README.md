@@ -15,6 +15,7 @@ This project was made using the follow technologies:
   <li><a href="https://nodejs.org/en/docs/">NodeJs</a></li>
   <li><a href="https://nextjs.org/">NextJs</a></li>
   <li><a href="https://pt-br.reactjs.org/">React</a></li>
+  <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
   <li><a href="https://github.com/fkhadra/react-toastify">React Toastify</a></li>
   <li><a href="https://bradfrost.com/blog/post/atomic-web-design/">Atomic Design</a></li>
 </ul>
@@ -23,6 +24,7 @@ This project was made using the follow technologies:
 
 - Ecommerce Landing Page
 - Subscribe on Newsletter
+- [WIP] Add product to Cart
 
 # :construction_worker: How to run
 
