@@ -11,7 +11,7 @@
   width: 100vh;
   position: absolute;
   margin-left: 15vh;
-  background: url("../../../public/assets/offMobile.svg") no-repeat;
+  background: url("../../../../public/assets/offMobile.svg") no-repeat;
 }
 
 .root .cardItems {
@@ -79,7 +79,7 @@
     height: 100px;
     width: 100px;
     margin-top: 0.5vh;
-    background: url("../../../public/assets/offDesktop.svg") no-repeat;
+    background: url("../../../../public/assets/offDesktop.svg") no-repeat;
   }
 
   .root .productImage {
