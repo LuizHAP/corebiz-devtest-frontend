@@ -1,13 +1,18 @@
 import type { AppProps } from "next/app";
+
 import { ToastContainer } from "react-toastify";
 
+import GlobalStyle from "@/styles/global";
+import { ThemeProvider } from "styled-components";
+import theme from "@/styles/theme";
+
 import "react-toastify/dist/ReactToastify.min.css";
-import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Component {...pageProps} />
+      <GlobalStyle />
       <ToastContainer
         position="top-center"
         autoClose={3000}
@@ -17,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         draggable={false}
         pauseOnHover
       />
-    </>
+    </ThemeProvider>
   );
 }
 
