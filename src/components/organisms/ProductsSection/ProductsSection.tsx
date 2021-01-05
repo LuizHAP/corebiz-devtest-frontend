@@ -8,7 +8,6 @@ type Props = {
 }
 
 const ProductsSection: React.FC<Props> = ({ products }) => {
-  console.log(products)
   return (
     <div className={styles.root}>
       <div className={styles.container}>
