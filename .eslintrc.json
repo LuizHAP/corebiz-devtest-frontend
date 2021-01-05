@@ -1,7 +1,7 @@
 {
   "env": {
     "browser": true,
-    "es2021": true,
+    "es2020": true,
     "node": true,
     "jest": true
   },
@@ -25,7 +25,6 @@
   "rules": {
     "prettier/prettier": "error",
     "space-before-function-paren": "off",
-    "react/prop-types": "off",
-    "singleQuote": true
+    "react/prop-types": "off"
   }
 }
