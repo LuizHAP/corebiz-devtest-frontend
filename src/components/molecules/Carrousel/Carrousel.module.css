@@ -64,8 +64,8 @@
     height: 430px;
   }
   .root:after {
-    background: url("../../../../public/assets/banner.svg") no-repeat top right;
-    content: "";
+    background: url('../../../../public/assets/banner.svg') no-repeat top right;
+    content: '';
     width: 95vh;
     height: 100vh;
     position: absolute;

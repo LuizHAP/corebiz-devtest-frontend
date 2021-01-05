@@ -1,4 +1,5 @@
-import styles from "./Carrousel.module.css";
+import React from 'react'
+import styles from './Carrousel.module.css'
 
 const Carrousel = () => {
   return (
@@ -15,7 +16,7 @@ const Carrousel = () => {
         <span />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Carrousel;
+export default Carrousel

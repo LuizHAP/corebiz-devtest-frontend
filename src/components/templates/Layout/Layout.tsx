@@ -1,14 +1,13 @@
-import Head from "next/head";
-import { Header } from "@/components/molecules";
-import { Footer } from "@/components/molecules";
-
-import styles from "./Layout.module.css";
+import React from 'react'
+import Head from 'next/head'
+import { Header, Footer } from '@/components/molecules'
+import styles from './Layout.module.css'
 interface LayoutProps {
-  children?: React.ReactNode;
-  title?: string;
+  children?: React.ReactNode
+  title?: string
 }
 
-const Layout = ({ children, title = "" }: LayoutProps) => {
+const Layout: React.FC<LayoutProps> = ({ children, title = '' }) => {
   return (
     <div className={styles.layout}>
       <Head>
@@ -20,7 +19,7 @@ const Layout = ({ children, title = "" }: LayoutProps) => {
       <main>{children}</main>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

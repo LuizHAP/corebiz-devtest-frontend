@@ -10,8 +10,7 @@ export default {
     miniRadius: '1rem'
   },
   font: {
-    family:
-      "Nunito, 'Lago', -apple-system, sans-serif",
+    family: "Nunito, 'Lago', -apple-system, sans-serif",
     light: 400,
     medium: 500,
     semibold: 600,
@@ -34,7 +33,7 @@ export default {
     secondary: '#c0c0c0',
     white: '#FFF',
     newsletterBg: '#f2f2f2',
-    bgLine: '#c0c0c0',
+    bgLine: '#c0c0c0'
   },
   spacings: {
     xxsmall: '0.8rem',

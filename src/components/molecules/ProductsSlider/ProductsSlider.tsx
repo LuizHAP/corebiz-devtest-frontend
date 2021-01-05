@@ -1,15 +1,16 @@
-import Slider from "react-slick";
+import React from 'react'
+import Slider from 'react-slick'
 
 interface SliderProps {
-  children?: React.ReactNode;
+  children?: React.ReactNode
 }
 
 function NextArrow(props: any) {
-  const { className, style, onClick } = props;
+  const { className, style, onClick } = props
   return (
     <div
       className={className}
-      style={{ ...style, display: "block" }}
+      style={{ ...style, display: 'block' }}
       onClick={onClick}
     >
       <svg
@@ -19,22 +20,22 @@ function NextArrow(props: any) {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {" "}
+        {' '}
         <path
           d="M13.1115 10.1416L3.3212 0.351461C3.09476 0.124845 2.79249 0 2.47018 0C2.14788 0 1.8456 0.124845 1.61917 0.351461L0.89818 1.07227C0.42903 1.54195 0.42903 2.30533 0.89818 2.7743L9.11932 10.9954L0.889058 19.2257C0.662621 19.4523 0.537598 19.7544 0.537598 20.0765C0.537598 20.399 0.662621 20.7011 0.889058 20.9279L1.61004 21.6485C1.83666 21.8752 2.13876 22 2.46106 22C2.78337 22 3.08564 21.8752 3.31208 21.6485L13.1115 11.8495C13.3385 11.6222 13.4631 11.3186 13.4624 10.996C13.4631 10.6721 13.3385 10.3687 13.1115 10.1416Z"
           fill="black"
-        />{" "}
+        />{' '}
       </svg>
     </div>
-  );
+  )
 }
 
 function PrevArrow(props: any) {
-  const { className, style, onClick } = props;
+  const { className, style, onClick } = props
   return (
     <div
       className={className}
-      style={{ ...style, display: "block" }}
+      style={{ ...style, display: 'block' }}
       onClick={onClick}
     >
       <svg
@@ -50,7 +51,7 @@ function PrevArrow(props: any) {
         />
       </svg>
     </div>
-  );
+  )
 }
 
 const settings = {
@@ -71,14 +72,14 @@ const settings = {
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows: false,
-        dots: true,
-      },
-    },
-  ],
-};
+        dots: true
+      }
+    }
+  ]
+}
 
 const ProductsSlider = ({ children }: SliderProps) => {
-  return <Slider {...settings}>{children}</Slider>;
-};
+  return <Slider {...settings}>{children}</Slider>
+}
 
-export default ProductsSlider;
+export default ProductsSlider

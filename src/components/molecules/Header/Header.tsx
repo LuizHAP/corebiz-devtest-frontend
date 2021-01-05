@@ -1,19 +1,18 @@
-import { useState } from "react";
-import { Logo } from "@/components/atoms";
-import { SearchInput } from "@/components/atoms";
+import React, { useState } from 'react'
+import { Logo, SearchInput } from '@/components/atoms'
 
 import {
   AiOutlineMenu,
   AiOutlineShoppingCart,
-  AiOutlineUser,
-} from "react-icons/ai";
+  AiOutlineUser
+} from 'react-icons/ai'
 
-import styles from "./Header.module.css";
+import styles from './Header.module.css'
 
-import Link from "next/link";
+import Link from 'next/link'
 
 const Header: React.FC = () => {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('')
   return (
     <header className={styles.pagination}>
       <div className={styles.header}>
@@ -27,8 +26,8 @@ const Header: React.FC = () => {
             label="search"
             value={search}
             placeholder="O que está procurando?"
-            onChange={(e) => {
-              setSearch(e.target.value);
+            onChange={e => {
+              setSearch(e.target.value)
             }}
           />
         </form>
@@ -46,13 +45,13 @@ const Header: React.FC = () => {
           label="search"
           value={search}
           placeholder="O que está procurando?"
-          onChange={(e) => {
-            setSearch(e.target.value);
+          onChange={e => {
+            setSearch(e.target.value)
           }}
         />
       </form>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

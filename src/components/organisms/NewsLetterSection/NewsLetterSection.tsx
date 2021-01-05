@@ -1,58 +1,59 @@
-import { useRef } from "react";
-import Input from "@/components/atoms/Input/Input";
-import { FormHandles, SubmitHandler } from "@unform/core";
-import api from "@/services/api";
-import { Form } from "@unform/web";
-import styles from "./NewsLetterSection.module.css";
-import * as Yup from "yup";
-import { toast } from "react-toastify";
+import React, { useRef } from 'react'
+
+import Input from '@/components/atoms/Input/Input'
+import { FormHandles, SubmitHandler } from '@unform/core'
+import api from '@/services/api'
+import { Form } from '@unform/web'
+import styles from './NewsLetterSection.module.css'
+import * as Yup from 'yup'
+import { toast } from 'react-toastify'
 
 interface FormData {
-  name: string;
-  email: string;
+  name: string
+  email: string
 }
 
 const NewsLetterSection: React.FC = () => {
-  const formRef = useRef<FormHandles>(null);
+  const formRef = useRef<FormHandles>(null)
   const handleSubmit: SubmitHandler<FormData> = async (
     data: FormData,
     { reset }
   ) => {
     try {
-      formRef.current?.setErrors({});
+      formRef.current?.setErrors({})
 
       const schema = Yup.object().shape({
-        name: Yup.string().required("O nome é obrigatório"),
+        name: Yup.string().required('O nome é obrigatório'),
         email: Yup.string()
-          .email("Digite um email válido")
-          .required("O e-mail é obrigatório"),
-      });
+          .email('Digite um email válido')
+          .required('O e-mail é obrigatório')
+      })
 
       await schema.validate(data, {
-        abortEarly: false,
-      });
+        abortEarly: false
+      })
 
       api
-        .post("newsletter", data)
+        .post('newsletter', data)
         .then(() => {
-          toast.success("Cadastro realizado com sucesso");
+          toast.success('Cadastro realizado com sucesso')
         })
         .catch(() => {
-          toast.error("Erro no cadastro");
-        });
+          toast.error('Erro no cadastro')
+        })
 
-      reset();
+      reset()
     } catch (err) {
-      const validationErrors = {};
+      const validationErrors = {}
       if (err instanceof Yup.ValidationError) {
-        err.inner.forEach((error) => {
-          validationErrors[error?.path] = error.message;
-        });
+        err.inner.forEach(error => {
+          validationErrors[error?.path] = error.message
+        })
 
-        formRef.current?.setErrors(validationErrors);
+        formRef.current?.setErrors(validationErrors)
       }
     }
-  };
+  }
   return (
     <div className={styles.root}>
       <div className={styles.container}>
@@ -70,7 +71,7 @@ const NewsLetterSection: React.FC = () => {
         </Form>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default NewsLetterSection;
+export default NewsLetterSection

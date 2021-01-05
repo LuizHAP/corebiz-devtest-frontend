@@ -18,7 +18,7 @@
 .location .line {
   width: 50px;
   height: 3px;
-  content: "";
+  content: '';
   margin-left: 2.2vh;
   background: white;
   left: 0;
@@ -96,7 +96,7 @@
     margin-right: 2.3vh;
   }
 
-  .sponsors span:first-child{
-      margin-right: 3vh;
+  .sponsors span:first-child {
+    margin-right: 3vh;
   }
 }

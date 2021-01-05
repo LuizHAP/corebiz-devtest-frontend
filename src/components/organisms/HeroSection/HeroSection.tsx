@@ -1,7 +1,8 @@
-import Carrousel from "@/components/molecules/Carrousel";
+import React from 'react'
+import Carrousel from '@/components/molecules/Carrousel'
 
 const HeroSection = () => {
-  return <Carrousel />;
-};
+  return <Carrousel />
+}
 
-export default HeroSection;
+export default HeroSection

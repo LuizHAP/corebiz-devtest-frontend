@@ -1,13 +1,14 @@
-import styles from "./ProductsSection.module.css";
-import { ProductsSlider } from "@/components/molecules";
-import { ProductItem } from "@/components/molecules";
-import Product from "@/types/product";
+import React from 'react'
+import styles from './ProductsSection.module.css'
+import { ProductsSlider, ProductItem } from '@/components/molecules'
+import Product from '@/types/product'
 
 type Props = {
-  products: Product[];
-};
+  products: Product[]
+}
 
-const ProductsSection = ({ products }: Props) => {
+const ProductsSection: React.FC<Props> = ({ products }) => {
+  console.log(products)
   return (
     <div className={styles.root}>
       <div className={styles.container}>
@@ -22,14 +23,15 @@ const ProductsSection = ({ products }: Props) => {
               imageUrl={product.imageUrl}
               listPrice={product.listPrice}
               price={product.price}
-              installments={product.installments}
+              quantity={product?.installments[0]?.quantity}
+              value={product?.installments[0]?.value}
               key={index}
             />
           ))}
         </ProductsSlider>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProductsSection;
+export default ProductsSection

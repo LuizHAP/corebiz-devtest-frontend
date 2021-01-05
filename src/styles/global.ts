@@ -1,4 +1,4 @@
-import { createGlobalStyle, css } from "styled-components";
+import { createGlobalStyle, css } from 'styled-components'
 
 export default createGlobalStyle`
   *{
@@ -23,4 +23,4 @@ export default createGlobalStyle`
       font-size: ${theme.font.sizes.small};
     }
   `}
-`;
+`
