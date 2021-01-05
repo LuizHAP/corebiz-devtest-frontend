@@ -8,6 +8,8 @@ import styles from './NewsLetterSection.module.css'
 import * as Yup from 'yup'
 import { toast } from 'react-toastify'
 
+import getValidationErrors from '@/utils/getValidationErrors'
+
 interface FormData {
   name: string
   email: string
@@ -46,11 +48,9 @@ const NewsLetterSection: React.FC = () => {
     } catch (err) {
       const validationErrors = {}
       if (err instanceof Yup.ValidationError) {
-        err.inner.forEach(error => {
-          validationErrors[error?.path] = error.message
-        })
+        const errors = getValidationErrors(err)
 
-        formRef.current?.setErrors(validationErrors)
+        formRef.current?.setErrors(errors)
       }
     }
   }
